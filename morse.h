@@ -5,11 +5,12 @@
 typedef struct {
     char letra;
     char *codigo;
-} MorseMap;
+} DicionarioMorse;
 
 // prototipo das funções
-void traduzir_arquivo(const char *nome_arquivo);
+void traduzir(const char *nome_arquivo);
 void processar_codigo(char *codigo);
 void buscar_corrompido(char *prefixo, int indice_dic);
+int contar_tamanho(char *texto);
 
 #endif
